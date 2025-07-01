@@ -76,7 +76,7 @@ Configuration:
 - Data transmission for prediction
 - Results visualization on computer terminal
 
-### System Architecture
+## System Architecture
 - Microphone → Raspberry Pi → [Preprocessing + ML Model] → MQTT → Computer Terminal
 - Results and Performance
 - Performance Metrics
