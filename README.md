@@ -34,10 +34,10 @@ Different datasets can be found in this link: https://www.kaggle.com/fabianavinc
 
 ## Audio Signal Analysis
 ### Preprocessing Pipeline
-Normalization: Verification of 44100 kHz frequency and mono-channel
-Zero Padding: Handling of variable-length audio
-STFT (Short-Time Fourier Transform): Transformation from time domain to frequency domain
-MFCC (Mel-Frequency Cepstral Coefficients): Feature extraction that approximates human auditory perception
+- Normalization: Verification of 44100 kHz frequency and mono-channel
+- Zero Padding: Handling of variable-length audio
+- STFT (Short-Time Fourier Transform): Transformation from time domain to frequency domain
+- MFCC (Mel-Frequency Cepstral Coefficients): Feature extraction that approximates human auditory perception
 
 ### Enhancement Techniques
 Experimentation with noise reduction (not implemented in final version)
@@ -47,17 +47,16 @@ Dataset-specific optimization for future implementations
 ### Tested Architectures
 
 1. CNN (Convolutional Neural Network) - Best Performance:
-
-2D convolutional layers
-Batch normalization
-ReLU activation function
-Global Average Pooling 2D
+- 2D convolutional layers
+- Batch normalization
+- ReLU activation function
+- Global Average Pooling 2D
 Accuracy: 80%
 
-2. DCNN (Deep Convolutional Neural Network):
+3. DCNN (Deep Convolutional Neural Network):
 Accuracy: 74%
 
-3. LSTM (Long Short-Term Memory):
+4. LSTM (Long Short-Term Memory):
 Lower performance compared to CNN models
 
 ### Optimizations
@@ -120,18 +119,5 @@ bashpip install tensorflow librosa numpy scipy paho-mqtt
 - Start MQTT broker on Raspberry Pi
 - Run the chord recognition script
 - Connect to the specified MQTT topic for real-time predictions
-
-Repository Structure
-├── src/
-│   ├── preprocessing/
-│   ├── models/
-│   ├── communication/
-│   └── utils/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-├── requirements.txt
-└── README.md
 
 Authors: Fabiana Vinci, Joana da Orada Gonçalves
